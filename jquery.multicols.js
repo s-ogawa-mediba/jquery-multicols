@@ -1,18 +1,17 @@
 /**
- *  jquery.multicols.js for CakePHP
- *  
- *  you can get align your favorite form elements columns.
+ * jquery.multicols.js for CakePHP
  *
- *  Copyright (c) 2010 Ogaaaan. 
- *  ogaaaan@yahoo.co.jp
- *  LGPL License
+ * you can get align your favorite form elements columns.
+ *
+ * @author Ogaaaan (Seiji Ogawa / HALTERIA.com)
+ * @License none. you can use it freely. ex: This was made by me!
  */
 (function($) {
   $.fn.multicols = function(options){
     var defaults = {
       cols: 3,
-    };
-    var options = $.extend(defaults, options); 
+    //~ };
+    var options = $.extend(defaults, options);
     var len = $(this).size();
     if(len<1) return false;
     var column = Math.ceil(len/options.cols);
