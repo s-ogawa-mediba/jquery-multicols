@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Multicols Example</title>
+  <style>
+    .chkLight { color:red; }
+  </style>
+  <script src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load("jquery", "1.4.2");
+  </script>
+  <script src="jquery.multicols.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      // EXAMPLE 1
+      $('#example1 div.checkbox').multicols({
+        cols:3,
+        style: 'margin-right: 3em'
+      });
+
+      // EXAMPLE 2
+      $('#example2 label').css({'display':'block'}).multicols({
+        cols:3,
+        style: 'margin: 2em',
+        class: 'chkLight'
+      });
+
+    });
+  </script>
+
+</head>
+<body>
+
+<h1>jQuery Multicols Example</h1>
+
+<h2>Example 1</h2>
+<form action="example.html" id="example1">
+<div class="checkbox"><input type="checkbox" name="chkbox1">Checkbox 1</div>
+<div class="checkbox"><input type="checkbox" name="chkbox2">Checkbox 2</div>
+<div class="checkbox"><input type="checkbox" name="chkbox3">Checkbox 3</div>
+<div class="checkbox"><input type="checkbox" name="chkbox4">Checkbox 4</div>
+<div class="checkbox"><input type="checkbox" name="chkbox5">Checkbox 5</div>
+<div class="checkbox"><input type="checkbox" name="chkbox6">Checkbox 6</div>
+<div class="checkbox"><input type="checkbox" name="chkbox7">Checkbox 7</div>
+<div class="checkbox"><input type="checkbox" name="chkbox8">Checkbox 8</div>
+<div class="checkbox"><input type="checkbox" name="chkbox9">Checkbox 9</div>
+<div class="checkbox"><input type="checkbox" name="chkbox10">Checkbox 10</div>
+<div class="checkbox"><input type="checkbox" name="chkbox11">Checkbox 11</div>
+<div class="checkbox"><input type="checkbox" name="chkbox12">Checkbox 12</div>
+<div class="checkbox"><input type="checkbox" name="chkbox13">Checkbox 13</div>
+<div class="checkbox"><input type="checkbox" name="chkbox14">Checkbox 14</div>
+<div class="checkbox"><input type="checkbox" name="chkbox15">Checkbox 15</div>
+<div class="checkbox"><input type="checkbox" name="chkbox16">Checkbox 16</div>
+<div class="checkbox"><input type="checkbox" name="chkbox17">Checkbox 17</div>
+<div class="checkbox"><input type="checkbox" name="chkbox18">Checkbox 18</div>
+<div class="checkbox"><input type="checkbox" name="chkbox19">Checkbox 19</div>
+<div class="checkbox"><input type="checkbox" name="chkbox20">Checkbox 20</div>
+<div class="checkbox"><input type="checkbox" name="chkbox21">Checkbox 21</div>
+<div class="checkbox"><input type="checkbox" name="chkbox22">Checkbox 22</div>
+<div class="checkbox"><input type="checkbox" name="chkbox23">Checkbox 23</div>
+<div class="checkbox"><input type="checkbox" name="chkbox24">Checkbox 24</div>
+<div class="checkbox"><input type="checkbox" name="chkbox25">Checkbox 25</div>
+<div class="checkbox"><input type="checkbox" name="chkbox26">Checkbox 26</div>
+<div class="checkbox"><input type="checkbox" name="chkbox27">Checkbox 27</div>
+<div class="checkbox"><input type="checkbox" name="chkbox28">Checkbox 28</div>
+<div class="checkbox"><input type="checkbox" name="chkbox29">Checkbox 29</div>
+<div class="checkbox"><input type="checkbox" name="chkbox30">Checkbox 30</div>
+</form>
+
+<h2>Example2</h2>
+<form id="example2">
+  <label for="chkbox1"><input type="checkbox" name="chkbox1" id="chkbox1">Checkbox 1</label>
+  <label for="chkbox2"><input type="checkbox" name="chkbox2" id="chkbox2">Checkbox 2</label>
+  <label for="chkbox3"><input type="checkbox" name="chkbox3" id="chkbox3">Checkbox 3</label>
+  <label for="chkbox4"><input type="checkbox" name="chkbox4" id="chkbox4">Checkbox 4</label>
+  <label for="chkbox5"><input type="checkbox" name="chkbox5" id="chkbox5">Checkbox 5</label>
+  <label for="chkbox6"><input type="checkbox" name="chkbox6" id="chkbox6">Checkbox 6</label>
+  <label for="chkbox7"><input type="checkbox" name="chkbox7" id="chkbox7">Checkbox 7</label>
+  <label for="chkbox8"><input type="checkbox" name="chkbox8" id="chkbox8">Checkbox 8</label>
+  <label for="chkbox9"><input type="checkbox" name="chkbox9" id="chkbox9">Checkbox 9</label>
+  <label for="chkbox10"><input type="checkbox" name="chkbox10" id="chkbox10">Checkbox 10</label>
+  <label for="chkbox11"><input type="checkbox" name="chkbox11" id="chkbox11">Checkbox 11</label>
+  <label for="chkbox12"><input type="checkbox" name="chkbox12" id="chkbox12">Checkbox 12</label>
+  <label for="chkbox13"><input type="checkbox" name="chkbox13" id="chkbox13">Checkbox 13</label>
+  <label for="chkbox14"><input type="checkbox" name="chkbox14" id="chkbox14">Checkbox 14</label>
+  <label for="chkbox15"><input type="checkbox" name="chkbox15" id="chkbox15">Checkbox 15</label>
+  <label for="chkbox16"><input type="checkbox" name="chkbox16" id="chkbox16">Checkbox 16</label>
+  <label for="chkbox17"><input type="checkbox" name="chkbox17" id="chkbox17">Checkbox 17</label>
+  <label for="chkbox18"><input type="checkbox" name="chkbox18" id="chkbox18">Checkbox 18</label>
+  <label for="chkbox19"><input type="checkbox" name="chkbox19" id="chkbox19">Checkbox 19</label>
+  <label for="chkbox20"><input type="checkbox" name="chkbox20" id="chkbox20">Checkbox 20</label>
+  <label for="chkbox21"><input type="checkbox" name="chkbox21" id="chkbox21">Checkbox 21</label>
+  <label for="chkbox22"><input type="checkbox" name="chkbox22" id="chkbox22">Checkbox 22</label>
+  <label for="chkbox23"><input type="checkbox" name="chkbox23" id="chkbox23">Checkbox 23</label>
+  <label for="chkbox24"><input type="checkbox" name="chkbox24" id="chkbox24">Checkbox 24</label>
+  <label for="chkbox25"><input type="checkbox" name="chkbox25" id="chkbox25">Checkbox 25</label>
+  <label for="chkbox26"><input type="checkbox" name="chkbox26" id="chkbox26">Checkbox 26</label>
+  <label for="chkbox27"><input type="checkbox" name="chkbox27" id="chkbox27">Checkbox 27</label>
+  <label for="chkbox28"><input type="checkbox" name="chkbox28" id="chkbox28">Checkbox 28</label>
+  <label for="chkbox29"><input type="checkbox" name="chkbox29" id="chkbox29">Checkbox 29</label>
+  <label for="chkbox30"><input type="checkbox" name="chkbox30" id="chkbox30">Checkbox 30</label>
+</form>
+
+</body>
+</html>
