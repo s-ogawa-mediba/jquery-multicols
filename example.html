@@ -5,6 +5,14 @@
   <title>jQuery Multicols Example</title>
   <style>
     .chkLight { color:red; }
+    .clearfix {
+      *zoom: 1;
+    }
+    .clearfix:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
   </style>
   <script src="http://www.google.com/jsapi"></script>
   <script type="text/javascript">
@@ -17,14 +25,26 @@
       // EXAMPLE 1
       $('#example1 div.checkbox').multicols({
         cols:3,
-        style: 'margin-right: 3em'
+        wrapper: {
+          class: 'clearfix'
+        },
+        columns: {
+          class: 'clearfix',
+          style: 'margin-right: 3em'
+        }
       });
 
       // EXAMPLE 2
       $('#example2 label').css({'display':'block'}).multicols({
-        cols:3,
-        style: 'margin: 2em',
-        class: 'chkLight'
+        cols:4,
+        wrapper: {
+          style: 'background: #eee;',
+          class: 'clearfix'
+        },
+        columns: {
+          style: 'margin: 2em',
+          class: 'chkLight'
+       }
       });
 
     });

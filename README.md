@@ -2,16 +2,81 @@
 
 ## Change from single column to Multi Columns automaticaly
 
-If you will layout some checkboxes or radiobuttons,
-You can write those tags single group.
+You can change layout of checkboxes, radio buttons and other form elements to any columns from one column without to edit HTML files if you use this plugin.
 
-DON'T customize dl, ul and ol tag by server side script!!
-I hope that your tags will be customized by DOM before rendering html.
+This plugin can display correct DOM.
+Not display rectangles of copy of that elements.
+*Their plugin is so suck.
 
-see http://torhamzedd.blogspot.jp/2010/10/cakephpjquery.html
+We knows that some frameworks display HTML Forms without line feed.
+But, You should NOT be customize HTML Tags by server side script.
 
-this blog is Japanese.
+I hope that your tags will be customized by DOM before rendering html by this plugin.
 
-but you are able to understand by some screenshots and some codes.
+So, the best way to customize column is to use this plugin!!
 
-enjoy.
+Enjoy.
+
+## Install
+
+put your js directory and call this plugin file after jquery.
+```
+<script type="text/javascript" src="/js/jquery.js">
+<script type="text/javascript" src="/js/jquery-multicols.js">
+```
+
+## How to use
+
+You can set one of the elements farmland those that are in a line to jquery selector.
+
+### 9 elements of input tags ( often display from some framework).
+
+```
+<div class="checkbox"><input type="checkbox" /></div>
+<div class="checkbox"><input type="checkbox" /></div>
+<div class="checkbox"><input type="checkbox" /></div>
+<div class="checkbox"><input type="checkbox" /></div>
+<div class="checkbox"><input type="checkbox" /></div>
+<div class="checkbox"><input type="checkbox" /></div>
+<div class="checkbox"><input type="checkbox" /></div>
+<div class="checkbox"><input type="checkbox" /></div>
+<div class="checkbox"><input type="checkbox" /></div>
+```
+
+### Change 1 colum to 3 columns without edit HTML
+
+```
+$('.checkbox').lumticols({ cols: 3 });
+```
+
+### Output DOM example
+
+```
+<div> <- wrapper
+  <div> <- columns
+    <div class="checkbox"><input type="checkbox" /></div>
+    <div class="checkbox"><input type="checkbox" /></div>
+    <div class="checkbox"><input type="checkbox" /></div>
+  </div>
+  <div> <- columns
+    <div class="checkbox"><input type="checkbox" /></div>
+    <div class="checkbox"><input type="checkbox" /></div>
+    <div class="checkbox"><input type="checkbox" /></div>
+  </div>
+  <div> <- columns
+    <div class="checkbox"><input type="checkbox" /></div>
+    <div class="checkbox"><input type="checkbox" /></div>
+    <div class="checkbox"><input type="checkbox" /></div>
+  </div>
+</div>
+```
+
+### Other options
+
+```
+$('.checkbox').multicols({
+  cols: 3,
+  wrapper: { tag: 'div', class: 'inputarea', style: 'margin: 1em;'},
+  columns: { tag: 'div' }
+});
+```
