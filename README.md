@@ -21,8 +21,8 @@ Enjoy.
 
 put your js directory and call this plugin file after jquery.
 ```
-<script type="javascript" src="/js/jquery.js">
-<script type="javascript" src="/js/jquery-multicols.js">
+<script type="text/javascript" src="/js/jquery.js">
+<script type="text/javascript" src="/js/jquery-multicols.js">
 ```
 
 ## How to use
@@ -71,7 +71,7 @@ $('.checkbox').lumticols({ cols: 3 });
 </div>
 ```
 
-### Options
+### Other options
 
 ```
 $('.checkbox').multicols({
