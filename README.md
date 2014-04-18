@@ -46,7 +46,7 @@ You can set one of the elements farmland those that are in a line to jquery sele
 ### Change 1 colum to 3 columns without edit HTML
 
 ```
-$('.checkbox').lumticols({ cols: 3 });
+$('.checkbox').multicols({ cols: 3 });
 ```
 
 ### Output DOM example
