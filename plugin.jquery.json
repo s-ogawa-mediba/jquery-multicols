@@ -12,7 +12,7 @@
     "licenses": [{"url": "http://www.wtfpl.net/txt/copying/"}],
     "files": ["jquery.multicols.js"],
     "description": "Change from single column to Multi Columns automaticaly",
-    "keywords": ["column","automatic","rows","checkbox","radio button"],
+    "keywords": ["columns","adjust","automatic","rows","checkbox","radio button","forms"],
     "homepage": "https://github.com/ogaaaan/jquery-multicols",
     "docs": "https://github.com/ogaaaan/jquery-multicols/blob/master/README.md"
 }
