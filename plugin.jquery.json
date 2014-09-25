@@ -1,0 +1,18 @@
+{
+    "name": "multicols",
+    "title": "jquery.multicols",
+    "version": "1.0.0",
+    "author": {
+        "name": "Seiji Ogawa - Ogaaaan",
+        "url": "http://torhamzedd.halteria.com"
+    },
+    "dependencies": {
+        "jquery": ">=1.2"
+    },
+    "licenses": [{"url": "http://www.wtfpl.net/txt/copying/"}],
+    "files": ["jquery.multicols.js"],
+    "description": "Change from single column to Multi Columns automaticaly",
+    "keywords": ["column","automatic","rows","checkbox","radio button"],
+    "homepage": "https://github.com/ogaaaan/jquery-multicols",
+    "docs": "https://github.com/ogaaaan/jquery-multicols/blob/master/README.md"
+}
